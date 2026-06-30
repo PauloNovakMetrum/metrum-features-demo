@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrum - Centro de Dados</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1E40AF;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%);
+            color: #F4F4F4;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features {
+            background: linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%);
+            padding: 5rem 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 20px;
+            padding: 2rem;
+            width: 280px;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #F4F4F4;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.18);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-icon {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .card-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            color: #F4F4F4;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: rgba(244, 244, 244, 0.9);
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            text-align: center;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo da Metrum" />
+        <div hidden class="logo">Metrum</div>
+        <nav>
+            <a href="#features">Recursos</a>
+            <a hidden href="#sobre">Sobre</a>
+            <a hidden href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Metrum Features Demo</h1>
+        <p>Descubra como a Metrum transforma dados em decisões inteligentes.</p>
+    </section>
+
+    <section id="features" class="features">
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zM2 14h20v-4H2v4zm2-3h2v2H4v-2z"/>
+                </svg>
+            </div>
+            <h3>DCIM (Data Center Infrastructure Management)</h3>
+            <p>É a central de software utilizada para monitorar, medir e gerenciar a infraestrutura física de um data center. Ela unifica o controle dos ativos de TI (servidores, racks) e das instalações de suporte (energia, refrigeração) em uma única plataforma.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                </svg>
+            </div>
+            <h3>BMS Building Management System (Sistema de Gestão Predial)</h3>
+            <p>É uma plataforma tecnológica de automação que centraliza o controle e o monitoramento de todos os sistemas operacionais e mecânicos de um edifício</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                </svg>
+            </div>
+            <h3>EPMS (Electrical Power Monitoring System)</h3>
+            <p>Monitoramento remoto e contínuo de infraestruturas elétricas críticas. Essa tecnologia permite coletar dados de consumo e estabilidade em tempo real, essenciais para evitar paradas e otimizar a eficiência de redes de energia</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Metrum. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
